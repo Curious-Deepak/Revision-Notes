@@ -33,7 +33,7 @@
 <a href="#printing">15. Printing & Views</a>
 <a href="#shortcuts">16. Shortcuts</a>
 <a href="#insert">17. Insert & Objects</a>
-<a href="#quick">18. Quick Revision</a>
+<a href="#footer">End</a>
 </aside>
 
 <main>
@@ -232,7 +232,7 @@ class="card"><h3>WWW (World Wide Web)</h3><p>Web service consisting of interconn
         data.</p><p><strong>Cache:</strong> locally stores web resources to speed loading.</p></div></div>
 <div class="card"><h3>Cloud Computing</h3><p>Computing resources/services delivered over a network, commonly the 
     Internet. Examples: cloud storage, cloud servers, online applications.</p></div>
-<div class="remember"><strong>DNS vs DHCP:</strong> DNS = domain name resolution; DHCP = automatic network 
+<div class="remember"><strong>DNS vs DHCP :</strong> DNS = domain name resolution; DHCP = automatic network 
     configuration such as IP address, subnet mask and gateway.</div>
 </section>
 
@@ -240,12 +240,22 @@ class="card"><h3>WWW (World Wide Web)</h3><p>Web service consisting of interconn
 <h2><span>09</span> Computer Networking</h2>
 <div class="card"><h3>Network Types</h3><div class="flow"><b>PAN</b><i>&lt;</i><b>LAN</b><i>&lt;</i><b>MAN</b><i>&lt;
     
-</i><b>WAN</b></div><ul><li><strong>PAN:</strong> personal range, e.g. phone + earbuds.</li><li><strong>LAN:</strong> 
-    home/office/school.</li><li><strong>MAN:</strong> city/metropolitan area.</li><li><strong>WAN:</strong> large 
+</i><b>WAN</b></div><ul><li><strong>PAN :</strong> personal range, e.g. phone + earbuds.</li><li><strong>LAN:</strong> 
+    home/office/school.</li><li><strong>MAN :</strong> city/metropolitan area.</li><li><strong>WAN:</strong> large 
         geographical area.</li></ul></div>
-<div class="card"><h3>Topologies</h3><p><strong>Bus:</strong> common backbone.</p><p><strong>Star:</strong> central 
-    device.</p><p><strong>Ring:</strong> circular arrangement.</p><p><strong>Mesh:</strong> many interconnections; 
-        high redundancy.</p><p><strong>Tree:</strong> hierarchical structure.</p></div>
+<div class="card"><h3>Topologies</h3><p><strong>Bus :</strong> all devices share a single backbone cable.</p><p><strong>Star :</strong> all devices connect to a central hub/switch.</p><p><strong>Ring:</strong> circular arrangement / devices form a closed loop.</p><p><strong>Mesh :</strong> devices have multiple/direct connections to other devices.; 
+        high redundancy.</p><p><strong>Tree :</strong> hierarchical structure / hierarchical combination of multiple star/bus structures..</p> 
+    <p><strong>Hybrid topology :</strong> combination of two or more topology types.</p></div>
+    <div style="text-align:center; margin:20px 0;">
+    <img 
+        src="topology.webp" 
+        alt="Network Topologies"
+        style="width:100%; max-width:800px; height:auto; display:block; margin:0 auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);"
+    >
+    <p style="margin-top:8px; color:#64748b; font-size:0.9rem;">
+        Figure : Common Network Topologies
+    </p>
+</div>
 <table><thead><tr><th>Device</th><th>Purpose</th><th>Layer association</th></tr></thead><tbody>
 <tr><td>Hub</td><td>Broadcasts to connected ports</td><td>Physical</td></tr><tr><td>Switch</td><td>Forwards Ethernet 
     frames using MAC addresses</td><td>Data Link</td></tr><tr><td>Router</td><td>Forwards packets between networks 
@@ -255,17 +265,137 @@ class="card"><h3>WWW (World Wide Web)</h3><p>Web service consisting of interconn
 <div class="grid2"><div class="card"><h3>TCP</h3><p>Connection-oriented, reliable, ordered transport with flow/
     congestion control.</p></div><div class="card"><h3>UDP</h3><p>Connectionless, lower overhead, no transport-layer 
         guarantee of delivery/order.</p></div></div>
-<table><thead><tr><th>Protocol</th><th>Purpose</th></tr></thead><tbody>
-<tr><td>HTTP/HTTPS</td><td>Web</td></tr><tr><td>FTP</td><td>File transfer</td></tr><tr><td>SMTP</td><td>Sending 
-    email</td></tr><tr><td>POP3</td><td>Receiving/downloading email</td></tr><tr><td>IMAP</td><td>Accessing/managing 
-        server-side email</td></tr><tr><td>DNS</td><td>Domain-name resolution</td></tr><tr><td>DHCP</td><td>Automatic 
-            network configuration</td></tr><tr><td>SSH</td><td>Secure remote access</td></tr>
-</tbody></table>
-<div class="card"><h3>OSI Model</h3><div class="osi"><span>7 Application</span><span>6 Presentation</span><span>5 
-    Session</span><span>4 Transport</span><span>3 Network</span><span>2 Data Link</span><span>1 Physical</span></
-    div><p class="remember">Memory: <strong>A P S T N D P</strong></p><p><strong>Router → Network | Switch → Data 
-        Link | Hub → Physical | TCP/UDP → Transport | IP → Network | MAC → Data Link</strong></p></div>
-</section>
+<table>
+    <thead>
+        <tr>
+            <th>Protocol</th>
+            <th>Full Form</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>HTTP</td>
+            <td>HyperText Transfer Protocol</td>
+            <td>Web communication</td>
+        </tr>
+
+        <tr>
+            <td>HTTPS</td>
+            <td>HyperText Transfer Protocol Secure</td>
+            <td>Secure web communication</td>
+        </tr>
+
+        <tr>
+            <td>FTP</td>
+            <td>File Transfer Protocol</td>
+            <td>File transfer</td>
+        </tr>
+
+        <tr>
+            <td>SMTP</td>
+            <td>Simple Mail Transfer Protocol</td>
+            <td>Sending email</td>
+        </tr>
+
+        <tr>
+            <td>POP3</td>
+            <td>Post Office Protocol Version 3</td>
+            <td>Receiving/downloading email</td>
+        </tr>
+
+        <tr>
+            <td>IMAP</td>
+            <td>Internet Message Access Protocol</td>
+            <td>Accessing and managing server-side email</td>
+        </tr>
+
+        <tr>
+            <td>DNS</td>
+            <td>Domain Name System</td>
+            <td>Domain-name resolution</td>
+        </tr>
+
+        <tr>
+            <td>DHCP</td>
+            <td>Dynamic Host Configuration Protocol</td>
+            <td>Automatic network configuration</td>
+        </tr>
+
+        <tr>
+            <td>SSH</td>
+            <td>Secure Shell</td>
+            <td>Secure remote access</td>
+        </tr>
+    </tbody>
+</table>
+<div class="card">
+    <h3>OSI Model</h3>
+
+    <div class="osi">
+        <span>
+            <strong>7. Application</strong> — Lets users/applications use network services.
+        </span>
+
+        <span>
+            <strong>6. Presentation</strong> — Converts, encrypts and compresses data.
+        </span>
+
+        <span>
+            <strong>5. Session</strong> — Starts, manages and ends a connection/session.
+        </span>
+
+        <span>
+            <strong>4. Transport</strong> — Delivers data from one device to another reliably.
+        </span>
+
+        <span>
+            <strong>3. Network</strong> — Finds the path and sends data to the correct network/device.
+        </span>
+
+        <span>
+            <strong>2. Data Link</strong> — Sends data between devices on the same network.
+        </span>
+
+        <span>
+            <strong>1. Physical</strong> — Sends raw bits 0s and 1s through cables or signals.
+        </span>
+    </div>
+
+    <p class="remember">
+        Memory: <strong>A P S T N D P</strong>
+    </p>
+
+    <p>
+        <strong>
+            Router → Network | Switch → Data Link | Hub → Physical |
+            TCP/UDP → Transport | IP → Network | MAC → Data Link
+        </strong>
+    </p>
+</div>
+
+<div style="text-align:center; margin:20px 0;">
+    <img 
+        src="osi_overview.svg" 
+        alt="Network Topologies"
+        style="width:100%; padding : 20px; max-width:850px; height:auto; display:block; margin:0 auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);"
+    >
+    <p style="margin-top:8px; color:#64748b; font-size:0.9rem;">
+        Figure : OSI Model Overview
+    </p>
+</div>
+
+<div style="text-align:center; margin:20px 0;">
+    <img 
+        src="osi model.svg" 
+        alt="Network Topologies"
+        style="width:100%; max-width:800px; height:auto; display:block; margin:0 auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);"
+    >
+    <p style="margin-top:8px; color:#fafbfb; font-size:0.9rem;">
+        Figure : OSI Model
+    </p>
+</div>
 
 <section id="word" class="section">
 <h2><span>10</span> MS Word — Basics & Interface</h2>
@@ -349,8 +479,7 @@ class="card"><h3>WWW (World Wide Web)</h3><p>Web service consisting of interconn
 <div class="grid3"><div class="card"><h3>Main Document</h3><p>Common/fixed content.</p></div><div 
 class="card"><h3>Data Source</h3><p>Variable data such as names/addresses.</p></div><div class="card"><h3>Merge 
     Field</h3><p>Placeholder such as «Name» or «Address».</p></div></div>
-<div class="card"><h3>Process</h3><div class="flow"><b>Start Mail Merge</b><i>→</i><b>Select Recipients</b><i>→</
-    i><b>Insert Fields</b><i>→</i><b>Preview</b><i>→</i><b>Finish & Merge</b></div><div class="remember"><strong>Mail 
+<div class="card"><h3>Process</h3><div class="flow"><b>Start Mail Merge</b><i>→</i><b>Select Recipients</b><i>→</i><b>Insert Fields</b><i>→</i><b>Preview</b><i>→</i><b>Finish & Merge</b></div><div class="remember"><strong>Mail 
         Merge → Mailings tab.</strong></div></div>
 </section>
 
@@ -406,23 +535,6 @@ class="card"><h3>Data Source</h3><p>Variable data such as names/addresses.</p></
             h3><p>Automatically numbers pages.</p></div></div>
 </section>
 
-<section id="quick" class="section">
-<h2><span>18</span> Quick Revision — Must Remember</h2>
-<div class="quick-grid">
-<div><b>Data</b><small>Raw facts</small></div><div><b>Information</b><small>Processed data</small></div><div><b>ALU</
-    b><small>Arithmetic + logic</small></div><div><b>CU</b><small>Control</small></div>
-<div><b>PC</b><small>Next instruction address</small></div><div><b>IR</b><small>Current instruction</small></
-    div><div><b>RAM</b><small>Volatile working memory</small></div><div><b>ROM</b><small>Non-volatile firmware</
-        small></div>
-<div><b>DNS</b><small>Domain → IP</small></div><div><b>DHCP</b><small>Automatic network config</small></
-    div><div><b>Router</b><small>IP routing</small></div><div><b>Switch</b><small>MAC/frame forwarding</small></div>
-<div><b>OCR</b><small>Printed characters</small></div><div><b>OMR</b><small>Marks/bubbles</small></div><div><b>MICR</
-    b><small>Magnetic/cheques</small></div><div><b>RFID</b><small>Radio/tag ID</small></div>
-<div><b>Ctrl + F</b><small>Find</small></div><div><b>Ctrl + H</b><small>Replace</small></div><div><b>F7</
-    b><small>Spelling/Grammar</small></div><div><b>Ctrl + Enter</b><small>Page Break</small></div>
-<div><b>Ctrl + K</b><small>Hyperlink</small></div><div><b>Mail Merge</b><small>Mailings tab</small></div><div><b>Ctrl 
-    + P</b><small>Print</small></div><div><b>Ctrl + J</b><small>Justify</small></div>
-</div>
 <div class="card trap"><h3>Top Exam Traps</h3><ul><li>PC = next instruction address; IR = current instruction.</
     li><li>DNS resolves names; DHCP provides network configuration.</li><li>OCR reads characters; OMR detects marks.</
         
@@ -436,8 +548,8 @@ class="card"><h3>Data Source</h3><p>Variable data such as names/addresses.</p></
             li></ul></div>
 </section>
 
-<footer class="footer">HPRCA Clerk 2026 • Computer & Word Processing revision notes • Topics covered so far only</
-    footer>
+<footer id = "footer" class="footer">
+</footer>
 </main>
 </div>
 </body>
